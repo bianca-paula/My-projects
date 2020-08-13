@@ -1,0 +1,144 @@
+body {
+    background: linear-gradient(to right, #9ac0f1, #a8b6c9);
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.todo-wrapper {
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px;
+    font-weight: 400;
+}
+
+.todo-wrapper h2 {
+    padding-top:40px;
+    margin: 0;
+    text-align: center;
+    color:#7dc8db;
+    font-size:35px;
+    text-shadow: 1px 1px 3px #000000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.todo-wrapper p {
+    padding-top:40px;
+    font-style: italic;
+    color: #666;
+    margin: 5px 0;
+}
+
+.todo-wrapper ul {
+    margin: 20px 0;
+}
+
+.todo-wrapper ul li {
+    margin: 5px 0;
+    padding: 3px;
+    font-size:0.5cm;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.todo-wrapper ul li:hover{
+    background: rgb(158, 225, 252);
+}
+.todo-wrapper ul li:nth-child(even) {
+    background: rgb(187, 213, 235);
+}
+
+.todo-wrapper .completed {
+  /*background: rgb(158, 225, 252);
+  color: rgb(158, 225, 252);*/
+  text-decoration: line-through;
+}
+
+.todo-wrapper .pretty-button {
+    margin: 10px 2px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: #66a6e2;
+    border: none;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+}
+
+.todo-wrapper .pretty-button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.todo-wrapper input {
+    padding: 3px 6px;
+    font-size:0.5cm;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+
+}
+
+.todo-wrapper form {
+    display: inline-block;
+}
+
+#control-wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.todo-wrapper #add-button{
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.todo-wrapper #clear-completed-button {
+    background-color: #df6ed9;
+}
+
+
+.todo-wrapper #empty-button {
+    background-color: #df6b6f;
+}
+
+.todo-wrapper #save-button {
+    background-color: #f1e868;
+}
+
+.todo-wrapper #load-button {
+    background-color: #86d486;
+}
+
+@media only screen and (min-width: 1400px) {
+    .todo-wrapper {
+        width: 50%;
+    }
+
+    .todo-wrapper input {
+        width: 600px;
+    }
+    
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+    .todo-wrapper {
+        width: 75%;
+    }
+
+    .todo-wrapper input {
+        width: 400px;
+    }
+}
